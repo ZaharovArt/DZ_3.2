@@ -8,8 +8,8 @@ public class zad_9 {
         int m = scanner.nextInt();
         System.out.println("Введите N");
         int n =scanner.nextInt();
-        m=m>>2;
-        System.out.println(Integer.toBinaryString(m));
+        if ((m>>31&1) == (n>>31&1)) {System.out.println("Числа имееют одинаковый знак");}
+        else System.out.println("Числа имееют разные знаки ");
 
     }
 }
